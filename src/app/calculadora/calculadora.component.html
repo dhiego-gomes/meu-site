@@ -1,0 +1,15 @@
+<h1>Calcular tempo</h1>
+<div>
+  <p>Quantos minutos?</p>
+    <input type="text" #tempoEmMinutos (blur)="getTempoEmMinutos(tempoEmMinutos.value)">
+
+  <p>Quantos parágrafos?</p>
+    <input type="text" #paragrafos (blur)="getParagrafos(paragrafos.value)">  
+  
+  <div>
+    <button class="btn btn-primary" (click)="calculaTempo()">CALCULAR</button>
+  </div>
+    
+  <p>Você deve passar aproximadamente {{ minutos }} minutos e {{ segundos }} segundos em cada parágrafo.</p>
+
+</div>
